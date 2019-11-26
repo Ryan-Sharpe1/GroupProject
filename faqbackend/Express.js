@@ -1,0 +1,11 @@
+var express = require ("express");
+var session = require("express-session");
+var mysql = require("./dbConnect.js");
+var bodyparser = require("body-parser");
+var cors=require("cors");
+var con=mysql();
+var app=express();
+app.use(session({secret: 'Secretses Hobbitses'}));
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(cors());
