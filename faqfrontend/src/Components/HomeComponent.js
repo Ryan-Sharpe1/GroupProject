@@ -4,20 +4,27 @@ import { Button, Form, Navbar, Nav, FormControl } from 'react-bootstrap'
 export default class Home extends React.Component {
     render() {
         return (
-            // <div>
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                    <Nav className="mr-auto">
+            <div>
+                <Navbar bg="primary" variant="dark" style={{border:'3px solid', color:'red'}}>
+                <Navbar.Brand href="/home"><img
+                        src="Nationwide.png"
+                        width="50"
+                        height="50"
+                        alt="Nationwide Logo"
+                        style={{borderRadius:'25px'}}
+                    /></Navbar.Brand>
+                    <Navbar.Text style={{color:'white'}}>Nationwide Building Society</Navbar.Text>
+                    <Nav className="mr-auto" style={{visibility:'hidden'}}>
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#features">Features</Nav.Link>
                         <Nav.Link href="#pricing">Pricing</Nav.Link>
                     </Nav>
-                    <Form inline>
+                    <Form inline style={{visibility:'hidden'}}>
                         <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="outline-info">Search</Button>
+                        <Button variant="danger">Search</Button>
                     </Form>
                 </Navbar>
-                /* <div style={{ position: 'relative', top: '130px' }}>
+                <div style={{ position: 'relative', top: '130px' }}>
                     <center>
                         <h1><a style={{ color: 'blue' }} href='/createuser'>Create User</a></h1>
                         <div style={{ maxWidth: "40vw", backgroundColor: 'red' }}>
@@ -26,7 +33,7 @@ export default class Home extends React.Component {
                         <h1><a style={{ color: 'blue' }} href='/login'>Login</a></h1>
                     </center>
                 </div>
-            </div> */
+            </div>
 
         )
     }
