@@ -3,6 +3,8 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from './Components/HomeComponent';
 import CreateUser from './Components/CreateUser';
+import Login from './Components/Login';
+import MainPage from './Components/FAQMainPage'
 
 class App extends React.Component {
     render() {
@@ -11,8 +13,10 @@ class App extends React.Component {
                 <div>
                     <Router>
                         <div>
-                            <Route exact path="/home" component={Home} />
+                            <Route exact path="/" component={Home} />
                             <Route exact path="/createuser" component={CreateUser} />
+                            <Route exact path="/login" component={Login} />
+                            <Route exact path="/faqmainpage" component={MainPage} />
                         </div>
                     </Router>
                 </div>

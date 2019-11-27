@@ -5,8 +5,8 @@ export default class Home extends React.Component {
     render() {
         return (
             <div>
-                <Navbar bg="primary" variant="dark" style={{border:'3px solid', color:'red'}}>
-                <Navbar.Brand href="/home"><img
+                <Navbar bg="primary" variant="dark" style={{borderTop:'2px solid', borderBottom:'2px solid', color:'red'}}>
+                <Navbar.Brand href="/"><img
                         src="Nationwide.png"
                         width="50"
                         height="50"
